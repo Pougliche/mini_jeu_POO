@@ -26,7 +26,12 @@ while player1.life_points > 0 && player2.life_points > 0    #Cette condition per
 
 end
 
-puts "GAME OVER. THANKS FOR PLAYING".red                    #Message de fin de jeu, en dehors de la boucle.
+if player2.life_points < 0                                 #Si player 2 n'a plus de point de vie, un message annonce la victoire de player 1. Sinon, un message annonce la victoire de player 2.
+    puts "The Friendly Neighborhood Spider-Man wins ! With great power comes great responsabilities".red
+    else puts "Green Goblin wins ! Oscorp stock goes up 20% ! ".green
+end
+
+puts "GAME OVER. THANKS FOR PLAYING AND STAY HYDRATED !".blue                   #Message de fin de jeu, en dehors de la boucle.
 
 
 
