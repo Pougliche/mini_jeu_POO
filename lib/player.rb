@@ -1,4 +1,4 @@
-require "pry"
+#require "pry"
 
 class Player
     attr_accessor :name, :life_points
@@ -34,4 +34,4 @@ class Player
 
 end
 
-binding.pry
+#binding.pry
