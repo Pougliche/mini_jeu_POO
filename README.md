@@ -1,6 +1,6 @@
-Hello there and welcome to the future of videogame.
+Hello there and welcome to the future of videogame. Don't forget your "colorize" gem to launch the programs.
 
-In this repository, you will find everything you need enter the new generation of gaming programmes. 
+In this repository, you will find everything you need enter the new generation of gaming programs. 
 
 App.rb -> 
 

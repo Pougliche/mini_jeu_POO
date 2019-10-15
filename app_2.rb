@@ -31,7 +31,7 @@ while user.life_points > 0 && (player1.life_points > 0 || player2.life_points > 
         end
     
         if player2.life_points <=0
-            puts "Green-Goblin has been defeated. Back to formula, Norman ".green
+            puts "Green-Goblin has been defeated. Back to formula, Norman !".green
             else
                 puts "1 - Green-Goblin has #{player2.life_points} HP".green
         end
