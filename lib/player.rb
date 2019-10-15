@@ -3,10 +3,12 @@ require "colorize"
 
 class Player
     attr_accessor :name, :life_points
+    @@bot_list=Array.new
 
     def initialize (players_name)
         @name = players_name
         @life_points = 10
+        @@bot_list<<self
     end
    
     def show_state
@@ -100,5 +102,4 @@ class HumanPlayer
             end
         end
     end    
-
 end
