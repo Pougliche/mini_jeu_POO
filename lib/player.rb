@@ -1,4 +1,4 @@
-#require "pry"
+require "colorize"
 
 class Player
     attr_accessor :name, :life_points
@@ -9,7 +9,7 @@ class Player
     end
    
     def show_state
-        return "#{@name} has #{@life_points} life points"
+        return "#{@name} has #{@life_points} life points left"
     end
 
     def gets_damage(damage_received,player_attacked)
@@ -18,12 +18,12 @@ class Player
         if player_attacked.life_points <= 0 
             puts "#{player_attacked.name} is dead. #{player_attacked.name}'s memory will never be forgotten."
         else 
-            puts "#{player_attacked.name} has #{player_attacked.life_points} life points"
+            puts "#{player_attacked.name} has #{player_attacked.life_points} life points left"
         end
     end
 
     def attacks(player_attacked)
-        puts "#{@name} has attacked #{player_attacked.name}"
+        puts "#{@name} attacks #{player_attacked.name}".yellow
         damage_done = compute_damage
         puts gets_damage(damage_done,player_attacked)
     end
